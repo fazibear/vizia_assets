@@ -1,6 +1,6 @@
 [package]
 name = "vizia_assets"
-version = "0.1.0"
+version = "0.1.1"
 description = "Build-time asset loader for Vizia applications"
 authors = ["Michał Kalbarczyk"]
 license = "MIT"
@@ -10,7 +10,7 @@ build = "build.rs"
 
 [dependencies]
 anyhow = "1"
-vizia_plug = { git = "https://github.com/vizia/vizia-plug" }
+vizia = { git = "https://github.com/vizia/vizia", rev = "bbf98e643333d2533983f5866296036c34284018", default-features = false }
 
 [build-dependencies]
 glob = "0.3"

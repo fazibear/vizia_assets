@@ -1,6 +1,6 @@
 use anyhow::Result;
-use vizia_plug::vizia::prelude::{Context, ImageRetentionPolicy};
-use vizia_plug::vizia::util::CSS;
+use vizia::prelude::{Context, ImageRetentionPolicy};
+use vizia::util::CSS;
 
 #[macro_use]
 mod macros;

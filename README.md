@@ -43,7 +43,7 @@ Call `load_assets` once when setting up the Vizia context:
 ```rust
 use vizia_assets::load_assets;
 
-fn setup(cx: &mut vizia_plug::vizia::prelude::Context) {
+fn setup(cx: &mut vizia::prelude::Context) {
     load_assets(cx).expect("assets loaded");
 }
 ```
