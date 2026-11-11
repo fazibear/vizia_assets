@@ -59,7 +59,7 @@ pub fn generate() {
                 }
                 "images" => panic!("unsupported image format: {}", asset.display()),
                 "fonts" => {
-                    body.push_str(&format!("    cx.add_font_mem(include_bytes!({path:?}));\n"));
+                    body.push_str(&format!("    cx.load_font_mem(include_bytes!({path:?}));\n"));
                 }
                 "stylesheets" => {
                     body.push_str(&format!("    css!(cx, {name}, {path:?})?;\n"));
